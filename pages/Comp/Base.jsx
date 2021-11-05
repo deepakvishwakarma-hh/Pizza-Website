@@ -2,6 +2,7 @@ import React from 'react'
 import Styles from "../../styles/Home.module.css"
 import { motion } from 'framer-motion'
 import { baseData } from './Data'
+import Image from "next/image"
 export default function Base({ toNext, updateBase }) {
     const baseList = baseData.map(v => {
         return (
@@ -20,12 +21,12 @@ export default function Base({ toNext, updateBase }) {
                     {baseList}
                 </select>
                 <div>
-                <button onClick={() => { toNext(3); }}>Select Base</button>
+                    <button onClick={() => { toNext(3); }}>Select Base</button>
                     <button onClick={() => { toNext(1) }}>GO Back</button>
                 </div>
             </div>
-            <div className={Styles.child_two}> 
-                <img src="https://media.istockphoto.com/photos/chef-cooking-pizza-spreading-tomato-sauce-on-pizza-base-picture-id1165262276?b=1&k=20&m=1165262276&s=170667a&w=0&h=2hwwm7TxI9o2hJV7XV8w5T7vzCY4Et85-U_VZjBezZM=" alt="none" />
+            <div className={Styles.child_two} style={{ width: '100px', height: '100%', position: 'relative' }}>
+                <Image src="/base.jpg" alt="basimages" layout="fill" className={Styles.imageComponent} />
             </div>
         </motion.main >
     )

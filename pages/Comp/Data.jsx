@@ -1,3 +1,4 @@
+
 const ToppinsData = [{
     name: "peproni",
     id: "toppin-1",
@@ -18,7 +19,7 @@ const ToppinsData = [{
     name: "black olive",
     id: "toppin-5",
     wrapperId: "wrapper-5"
-}   , {
+}, {
     name: "green pepper",
     id: "toppin-6",
     wrapperId: "wrapper-6"
