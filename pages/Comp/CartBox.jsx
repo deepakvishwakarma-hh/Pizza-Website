@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 export default function CartBox({ selectedToppins, selectedBase, position, L, R, B, T }) {
     const filteredToppins = [...new Set(selectedToppins)]
     const tpList = filteredToppins.map(v => {
-        return (<li>{v}</li>)
+        return (<li key={v}>{v}</li>)
     })
     return (<motion.div style={{ height: 0 }}
         animate={

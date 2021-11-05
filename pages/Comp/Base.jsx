@@ -5,7 +5,7 @@ import { baseData } from './Data'
 export default function Base({ toNext, updateBase }) {
     const baseList = baseData.map(v => {
         return (
-            <option value={v.name}>{v.name}</option>
+            <option key={v.name} value={v.name}>{v.name}</option>
         )
     })
     return (
@@ -13,8 +13,8 @@ export default function Base({ toNext, updateBase }) {
             <div className={Styles.child_one}>
                 <h1>Choose your fevorite Base </h1>
                 <br />
-                <small>select Base for pizza <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF6D21" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                <small>select Base for pizza <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF6D21" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                 </svg> </small> <br />
                 <select onChange={(e) => { updateBase(e.target.value); console.log(e.target.validationMessage) }} className={Styles.select} name="selectBase" id="selectBase">
                     {baseList}
