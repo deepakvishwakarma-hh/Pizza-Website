@@ -1,9 +1,18 @@
 import React from 'react'
 import Styles from "../../styles/Home.module.css"
 import { motion } from 'framer-motion'
-import { baseData } from './Data'
+// import { baseData } from './Data'
 import Image from "next/image"
 export default function Base({ toNext, updateBase }) {
+    const baseData = [{
+        name: "default",
+    }, {
+        name: "Flatbread"
+    }, {
+        name: "Thin Crust",
+    }, {
+        name: "Sicilian Style",
+    }]
     const baseList = baseData.map(v => {
         return (
             <option key={v.name} value={v.name}>{v.name}</option>
