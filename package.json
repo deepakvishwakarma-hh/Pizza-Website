@@ -1,5 +1,5 @@
 {
-  "name": "pizza-website",
+  "name": "Pizza-Website",
   "private": true,
   "scripts": {
     "dev": "next dev",
