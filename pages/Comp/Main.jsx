@@ -1,4 +1,5 @@
-// Filteration
+// -C
+// Reqiured stuff
 import Styles from "../../styles/Home.module.css"
 import { motion } from 'framer-motion'
 import Image from "next/image"
@@ -12,9 +13,9 @@ export default function Inner({ toNext }) {
                 <h1>Choosing Healthy and Freshy Food</h1>
                 <p>Just confirm your order and enjoy our delicious fastest delivery.</p>
                 <div>
-                    <button onClick={() => {
+                    <motion.button animate={{ scale: [.9, 1, .9] }} transition={{ repeat : Infinity}} onClick={() => {
                         toNext(1)
-                    }}>Create Pizza</button>
+                    }}>Create Pizza</motion.button>
                 </div>
             </div>
             <div className={Styles.child_two} style={{ width: '100px', height: '100%', position: 'relative' }}>

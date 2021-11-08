@@ -1,3 +1,5 @@
+//-C
+// Required Stuff
 import Styles from "../../styles/Home.module.css"
 import { motion } from 'framer-motion'
 import CartBox from "./CartBox"
@@ -9,7 +11,7 @@ export default function CheakOrder({ toNext, selectedBase, selectedToppins }) {
                 <p>Just confirm your order and enjoy our delicious fastest delivery.</p>
                 <div>
                     <button onClick={() => {
-                        toNext(1)
+                        alert("Order Placed")
                     }}>Place Order</button>
                     <button onClick={() => { toNext(2) }}>Go back</button>
                 </div>

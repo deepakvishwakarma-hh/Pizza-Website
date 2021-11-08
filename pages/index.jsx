@@ -1,4 +1,3 @@
-import React from 'react'
 import Head from 'next/head'
 import Styles from "../styles/Home.module.css"
 import Header from './Comp/Header'
@@ -17,8 +16,10 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Create Pizzza Clone</title>
-      </Head>
+        {/* Simple SEO  */}
+        <title>Pizza Website UI</title>
+        <meta name="description" content="Pizza website UI Project create with the help of ReactJS ,NextJS ,Framer-Motion. " />
+        <meta name="robots" content="noindex, nofollow" /> </Head>
       <div className={Styles.wrapper}>
         <div className={Styles.inner}>
           <Header setToggleCart={setToggleCart} toggleCart={toggleCart} />

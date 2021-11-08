@@ -1,7 +1,11 @@
+// -C 
+// Required Stuff
 import classes from "../../styles/CartBox.module.css"
 import { motion } from 'framer-motion'
 export default function CartBox({ selectedToppins, selectedBase, position, L, R, B, T }) {
+    // Remove Duplicate 
     const filteredToppins = [...new Set(selectedToppins)]
+    // mapping toppins list 
     const tpList = filteredToppins.map(v => {
         return (<li key={v}>{v}</li>)
     })

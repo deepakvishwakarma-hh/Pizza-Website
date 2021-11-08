@@ -1,4 +1,5 @@
-import React from 'react'
+//-C
+// Required stuff
 import Styles from "../../styles/Home.module.css"
 import { motion } from 'framer-motion'
 export default function Header({ setToggleCart, toggleCart }) {

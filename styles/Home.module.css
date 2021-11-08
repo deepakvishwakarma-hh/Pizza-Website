@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+/* wrapper is the main display of the website. */
 .wrapper {
     font-family: 'Arimo', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -13,6 +14,7 @@
     height: 100vh;
 }
 
+/* this is child of wrapper  */
 .inner {
     width: 80%;
     margin: auto;
@@ -21,6 +23,7 @@
     padding: 2rem;
 }
 
+/* first child of inner */
 .inner header {
     display: flex;
     align-items: center;
@@ -28,6 +31,7 @@
     height: 50px;
 }
 
+/* to Style all button inside header */
 .inner header div button {
     border: none;
     background: white;
@@ -38,25 +42,30 @@
     font-family: 'Balsamiq Sans', cursive !important;
 }
 
+/* second child of inner */
 .inner main {
     height: 80%;
     display: grid;
     grid: auto / 50% 50%;
 }
 
+/* first child of main */
 .child_one {
     align-self: center;
 }
 
+/* second child of main */
 .child_two {
     display: flex;
     padding: 1rem;
     justify-content: center;
     min-width: 100%;
     height: 100%;
-
+    align-items: center;
+    justify-content: center;
 }
 
+/* main's child typography & svgs */
 .child_one small {
     font-size: .8rem;
     text-transform: uppercase;
@@ -73,10 +82,7 @@
     padding: 1rem 1rem 0 0;
     font-size: 4rem;
     line-height: 5rem;
-    /* font-family: 'Balsamiq Sans', cursive !important;
-     */
     font-family: 'Anton', sans-serif;
-    /* letter-spacing: 2px; */
     color: rgba(0, 0, 0, 0.808);
 }
 
@@ -94,6 +100,7 @@
     border-radius: .5rem;
 }
 
+/* to style button of first child of .child_one */
 .child_one div button {
     border: none;
     background: none;
@@ -101,9 +108,9 @@
     padding: 1rem 2rem;
     font-family: 'Balsamiq Sans', cursive !important;
     letter-spacing: 1px;
-
 }
 
+/* First button  */
 .child_one div button:nth-child(1) {
     background: #FF6D21;
     border-radius: 1rem 1rem 0 1rem;
@@ -111,9 +118,9 @@
     padding: 1rem 2rem;
     font-weight: bold;
     color: white;
-
 }
 
+/* second button  */
 .child_one div button:nth-child(2) {
     border-radius: 0rem 1rem 1rem 1rem;
     text-transform: capitalize;
@@ -124,6 +131,7 @@
     border: 2px black solid;
 }
 
+/* to style child_two banner image  */
 .child_two img {
     width: 100%;
     height: 80%;
@@ -131,28 +139,9 @@
     border-radius: 2rem 2rem 2rem 2rem;
 }
 
-.selection {
-    width: auto;
-    display: inline-flex;
-    justify-content: space-around;
-    margin: .5rem;
-    color: #FF6D21;
-    border-right: 2px rgba(128, 128, 128, 0.062) solid;
-}
-
-.selection input {
-    display: none;
-}
-
-.selection label {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: .5px;
-    padding: .3rem 1rem .3rem 0;
-    text-transform: capitalize;
-}
 
 
+/* Specially for Base.jsx's selection  */
 .select {
     font-size: 1rem;
     font-weight: bold;
@@ -170,13 +159,7 @@
     outline: none;
 }
 
-.child_two {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
+/* Specially for Toppins -  .ToppinsButton , .add   */
 .listedItems {
     display: inline-flex;
     background: rgba(0, 0, 0, 0.075);
@@ -209,6 +192,13 @@
     background: rgba(0, 0, 0, 0.062);
     margin: .3rem;
 }
+
+.add {
+    font-size: 3rem;
+    opacity: .5;
+}
+
+/* Responsiveness  */
 
 @media screen and (max-width: 1150px) {
     .child_one div button {
@@ -258,5 +248,4 @@
         display: grid;
         grid: auto 50% /auto;
     }
-
 }
